@@ -1,14 +1,10 @@
-@font-face {
-  src: url(./fonts/Raleway-italic-VaribleFont_wght.ttf);
-  font-family: Raleway;
-}
 
 body {
     margin: 0;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     background-color: #ffff;
-    
+  
 
 }
 
@@ -28,24 +24,23 @@ blockquote {
 
 .content-section{
     box-sizing: border-box;
-    width: 1052px;
     height: 105px;
     min-height: 100px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+ /*отвечает закартинку оно тебе надо в шапке, его нельзя удалить без вреда для верстки*/
 }
 
 .header {
-    padding: 0px 24px 0px 24px;
+    margin: 95px 50px 93px 50px;
     width: 1052px;
     height: 293px;
     flex-shrink: 0;
-    color: #00000;
+    color: #0000;
     margin: auto;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     display: flex;
     justify-self: center;
 
@@ -64,10 +59,9 @@ blockquote {
     flex-direction: row;
     justify-content: space-between;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-style: normal;
     line-height: normal;
-    color: #000;
     font-size: 18px;
     font-weight: 400;
     width: 387px;
@@ -75,7 +69,7 @@ blockquote {
     list-style-type: none;
 }
 
-.header-links a {
+.a {
     color: #000;
 }
  
@@ -104,7 +98,7 @@ blockquote {
 .address {
     display: flex;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +113,7 @@ blockquote {
 .address-footer {
   display: flex;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -144,11 +138,12 @@ blockquote {
      height: 105px;
      flex-direction: column;
      justify-content: center;
+     /*это костыль, а не лишеняя обертка*/
 }
 
 .email {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-style: normal;
     line-height: normal;
 }
@@ -288,9 +283,6 @@ blockquote {
     line-height: 28px;
   }
   
-  .lots-pictures {
-    display: grid;
-  }
 
   .lots {
     display: grid;
@@ -351,7 +343,7 @@ blockquote {
     text-decoration: none;
   }
   
-  .item {
+  .card {
     display: flex;
    width: 334px;
    height: 563px;
@@ -361,7 +353,6 @@ blockquote {
   
   .card_type_film {
     background-image: url("../images/lot 1.png");
-    background-color: #a7a7a7;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
