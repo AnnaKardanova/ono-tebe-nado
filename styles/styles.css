@@ -1,17 +1,31 @@
 /*проект переделан по видео урокам создания сайта ради бога надеюсь в этот раз без косяков :')*/
 
 .container {
-  margin: 0 50px;
+  
+}
+
+.body {
+  width: 1100px;
+  margin: auto;
 }
 
 .header {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  justify-items: end;
+  display: flex;
+  height: 293px;
+  width: 1100px;
+  flex-direction: row;
   align-items: center;
-  column-gap: 6vw;
-  box-sizing: border-box;
-  margin: 95px 50px 93px 50px;
+  justify-content: space-between;
+  border: #000 1px solid;
+
+}
+
+.header-menu {
+  display: flex; 
+  height: 100%; 
+  width: 454px; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .header-menu-list {
@@ -39,21 +53,23 @@
 }
 
 .header-logo-link {
-  justify-self: center;
+  margin: auto;
 }
 
 .header-logo-image {
-  display: block;
+  display: flex;
   justify-self: center;
   width: 148px;
   height: 105px;
+  align-self: center;
 }
 
 .address {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
-  width: 240px;
+  justify-self: flex-end;
+  width: 454px;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -65,13 +81,24 @@
   color: #000;
 }
 
+.adress-end {
+  width: 240px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 48px;
+}
+
 .cover {
   position: relative;
   padding-bottom: 58px;
   background-image: url(../images/lotus.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+  width: 1102px;
+  height: 100%;
+
 }
 
 .cover-title {
@@ -86,6 +113,8 @@
   font-size: 100px;
   line-height: 100%;
   letter-spacing: 30px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .letter-spacing-extended {
@@ -164,11 +193,12 @@
 }
 
 .lots {
-  padding: 152px 0px 182px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
 }
 
 .lots-heading {
-  margin: 27px 40px;
   color: #000;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
@@ -178,23 +208,22 @@
 }
 
 .lots-card-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 25px;
-  box-sizing: content-box;
-  padding-bottom: 30px;
+display: grid;
+grid-template-columns: 334px 334px 334px;
+column-gap: 25px;
+  
 }
 
 .lots-card-list-item {
   flex-grow: 1;
-  flex-basis: 430px;
+  flex-basis: 334px;
   list-style-type: none;
+  height: 563px;
 }
 
 .lots-background-film {
   background-image: url(../images/lot\ 1.png);
+
 }
 
 .lots-background-book {
@@ -215,6 +244,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
+  height: 460px;
 }
 
 .lots-link-card {
@@ -231,6 +261,7 @@
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .card-text {
